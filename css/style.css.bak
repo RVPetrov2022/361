@@ -1,0 +1,514 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+
+
+
+
+
+/* font adjusting hack */
+html * {
+	max-height: 1000000px;
+}
+/* common */
+html {
+    height: 100%;
+}
+body {
+    font: normal 400 16px / 26px 'Roboto', Arial, Helvetica, sans-serif;
+    letter-spacing: 0.05em;
+    color: #1F3F68;  /* Blue_01 */  
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
+    align-content: center;
+}
+
+/*
+header  {
+animation-name: header_test1;
+animation-duration: 5s;
+animation-delay: 1s;
+animation-timing-function:  ease-in;    
+
+}
+
+*/
+
+/*****************************************************
+                            HEADER 
+*******************************************************/
+
+
+header {
+background: linear-gradient(0deg, #EBF3FB 0%, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
+width: 1366px; 
+
+}
+    
+
+
+header .container {
+
+height: 48px;
+margin-top: 34px; 
+margin-left: 113px;
+margin-right: 113px;
+display: flex;
+justify-content: space-between;
+}
+
+@keyframes header_test1  {
+    
+0% { width: 1366px;  } 
+20% { width: 900px;  }     
+40% { width: 700px;   } 
+60% { width: 500px;    } 
+80% { width: 360px;  }    
+}
+    
+header:hover {
+animation-play-state: paused;  
+}    
+    
+
+.logo_left {
+background-image: url('../img/logo.png');
+width: 48px;
+background-repeat: no-repeat;
+background-position: center;
+
+}
+
+.logo_right {
+background-image: url('../img/user.png');
+width: 48px;
+background-repeat: no-repeat;
+}
+
+.logo_left:hover,
+.logo_right:hover {
+ transform: scale(120%);   
+   
+}
+header section {
+display: flex;
+flex-direction: row;
+/*! flex-flow: 1; */
+margin-left:113px;
+margin-right: 113px;
+}
+
+
+/****************** БЛОК ЛЕВЫЙ ******************/
+
+
+header section article:nth-child(1) {
+margin-top: 107px;
+padding: 0px;
+width: 524px;
+}
+
+header article h3 {
+font-weight: 300;
+font-size: 64px;
+line-height: 74px;
+letter-spacing: 0.04em;/* or 116% */
+margin-bottom: 32px;
+padding: 0;
+}
+
+header article p {
+opacity: 0.6; 
+width: 425px;
+margin-bottom: 71px;
+}
+
+header article button {
+width: 220px;
+height: 56px;
+margin-bottom: 190px;
+line-height: 26px;
+text-align: center;/* identical to box height, or 162% */
+letter-spacing: 0.04em;
+color: #FFFFFF; 
+border: 1px solid black;
+background: #5A98D0;/* blue_04 */
+box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+border-radius: 10px;    
+}
+
+header article button:hover {
+filter: saturate(10%);
+} 
+/****************** БЛОК ПРАВЫЙ ******************/
+
+header section article:nth-child(2){
+margin-top: 76px;
+margin-left: 14px;
+padding: 0;
+width: 648px;
+background-image: url('../img/illustration.svg');    
+background-repeat: no-repeat;   
+    
+}
+
+header section article:nth-child(2):hover {
+filter: sepia(1) ;
+transform: rotateY(180deg);
+}
+
+
+/*************************************************
+      MAIN
+************************************************/
+main {
+margin-left:113px;
+margin-right: 113px;
+width: 1140px;
+}
+
+
+/*************************************************
+       SECTION 1
+************************************************/
+main container {
+display: flex;
+flex-basis: row;
+margin: 0px;
+padding: 0px;
+justify-content: space-between;
+
+}
+
+main article {
+width: 358px;
+height: 480px;
+/*background-color: red; */
+
+}
+
+main div {
+margin-top: 44px;
+background-repeat: no-repeat;
+width: 190px;
+height: 130px;
+}
+
+div.img1 {
+background-image: url('../img/1.svg');     
+margin-left:   70px;
+}
+
+div.img3 {
+background-image: url('../img/2_20.svg');     
+margin-left: 94px;
+
+}
+
+
+div.img2{
+background-image: url('../img/rroup 15.svg');     
+margin-left: 116px;
+}
+
+
+.img1,
+.img1,
+.img3 {
+transition: 0.6s;
+transition-duration: 1s;   
+transition-timing-function:  cubic-bezier;
+
+}
+
+.img1:hover,
+.img2:hover,
+.img3:hover {
+filter: sepia(50%); 
+filter: brightness(140%);
+filter: contrast(118px);
+filter: opacity(80%);
+transform: rotate(4turn);
+}
+
+
+/********************  ШРИФТЫ *******/
+
+
+main h3 {
+width: 1140px;
+
+margin: 64px 0;
+font-weight: 300;
+font-size: 36px;
+line-height: 46px;
+text-align: center;/* or 128% */
+color: #000000;    
+    
+}
+
+main h4 {
+font-size: 18px;
+line-height: 30px;  
+margin-left: 32px;
+margin-right: 42px;
+margin-top:   51px; 
+margin-bottom: 14px;
+line-height: 26px;    
+}
+main p:first-of-type {
+margin-left: 32px;
+margin-right: 42px;    
+
+}
+main p:last-of-type {
+font-size: 12px;
+line-height: 30px; 
+margin-left: 32px;
+margin-top: 29px;
+
+}
+
+
+/*************************************************
+       SECTION 2
+************************************************/
+.section_2 {
+flex: none;
+text-align: center;
+
+width: 1140px;    
+height: 562px;  
+
+}
+.section_2 h3 {
+margin-bottom: 32px;
+font-weight: 300;
+font-size: 36px;
+line-height: 46px;
+color: #000000;    
+
+}
+
+.section_2 article p {
+margin: 0 308px;
+color: #222222;   
+line-height: 26px; 
+width: 670px;
+
+
+}
+/*** FOTO  ****/
+div.img_1 {
+margin-top:  64px;
+margin-bottom: 32px;
+width: 1140px;
+ height: 480px;    
+background-image: url('../img/rectangle.jpg');   
+
+}
+.section_3 {
+margin-top: 290px;
+margin-bottom: 0;
+padding: 0;
+display: flex;
+flex-direction: row;
+width: 1140px;
+height: 565px;    
+gap: 32px;
+
+}
+
+
+div.img_2 {
+background-image: url('../img/rectangle 2.1.jpg');   
+margin-top: 32px;    
+width: 554px;
+height: 417px;
+background-size: 100%;
+} 
+div.img_3 {
+margin-top: 32px;    
+width: 554px;
+height: 417px; 
+background-image: url('../img/rectangle 2.2.jpg');  
+background-size: 100%;
+} 
+/*************************************************
+   FOOTER
+************************************************/*  
+footer {
+width: 1366px;
+height: 657px;
+background: #316099;   
+margin-top: 810px;
+color: #FFFFFF;
+line-height: 26px;
+    
+}
+
+/*   FOOTER секция 1 */
+section.footer_1 {
+margin-left: 113px;
+}
+.footer_1 {
+display: flex;
+flex-direction: row;
+   
+margin: 0 auto;
+padding-bottom:  0px;
+
+}
+
+.footer_1 h3 {
+margin-top: 91px;
+margin-bottom: 32px;
+width: 342px;
+height: 92px;
+font-size: 36px;
+line-height: 46px;
+}
+
+.footer_1 p {
+margin-bottom: 96px;
+width: 495px;
+height: 80px;
+
+}
+
+.footer_1 div {
+width: 236px;
+height: 56px;
+text-align: center;/* identical to box height, or 162% */
+letter-spacing: 0.04em;
+    
+}
+/************  КНОПКА  ***********/
+button {
+width: 236px;
+height: 56px;
+background: #5A98D0;
+line-height: 26px;
+text-align: center;/* identical to box height, or 162% */
+letter-spacing: 0.04em;
+color: #FFFFFF;
+border: 0px;
+margin-top: 165px; 
+margin-left: 407px;
+
+}
+
+/* СЕКЦИЯ 2  */
+.adress {
+ display: flex;
+ justify-content: row;
+ margin-left: 113px;
+ margin-top: 64px;
+}
+.footer_2 {
+ height: 266px;   
+ border-top: 2px solid rgba(255,255,255,0.4); 
+}
+
+.numer {
+display: flex;
+}
+.numer p {
+width: 317px;
+height: 48px; 
+margin-left: 30px;
+margin-right: 32px;
+}
+
+
+
+
+/*************  CopyRite *************/
+
+.copyrite {
+width: 310px;
+height: 26px;
+margin-left: 113px;
+margin-top: 64px;
+}
+/*
+footer {
+    width: 1140px;
+    flex: none;
+    background: #316099;
+    color: #fff;
+}
+footer section + section {
+    border-top: 2px solid rgba(255,255,255,0.4);
+}
+footer .container {
+    padding: 64px 0;
+}
+footer h3 {
+    margin: 27px 0;
+    font-weight: 400;
+    text-align: left;
+    width: 336px;
+}
+footer p {
+    margin: 32px 0;
+    opacity: 0.6;
+    width: 480px;
+}
+footer ol {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+footer li {
+    flex: 0 0 316px;
+    padding-left: 42px;
+    position: relative;
+}
+footer li::before {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: 'T.';
+}
+footer li:first-child::before {
+    content: 'A.';
+}
+footer li:last-child::before {
+    content: 'E.';
+}
+footer button {
+    float: right;
+    margin-top: -160px;
+    width: 340px;
+    height: 56px;
+    color: #fff;
+    background: #5a98d0;
+    font: normal 400 16px / 26px 'Roboto', Arial, Helvetica, sans-serif;
+    letter-spacing: 0.04em;
+}
+.copy {
+    margin: 64px 0 0;
+    opacity: 0.4;
+}
+*/
