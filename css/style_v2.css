@@ -1,0 +1,168 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+
+
+
+
+
+/* font adjusting hack */
+html * {
+	max-height: 1000000px;
+}
+/* common */
+html {
+    height: 100%;
+}
+body {
+/*! background-color: pink; */
+height: 100%;
+  
+font-family: 'Roboto';
+font-style: normal;
+}
+/***************************************************
+                          HEADER 
+***************************************************/
+
+header {
+display: flex;
+flex-direction: column;
+/*! background-color: red; */
+height: 129px;
+}
+
+div.header {
+margin: 37px auto;
+/*! background-color: yellow; */  
+width: 1139px;
+height: 45px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+}
+
+.logo {
+margin: auto 0px;
+width: 45px;
+height: 35px;
+/*! background-color: blue; */  
+background-image: url('../img/logo.png');
+}
+
+
+.user {
+margin: auto 0px; /* Выравнивание по высоте */
+width: 40px;
+height: 38px;
+background-color: blue;
+background-image: url('../img/user.png'); 
+}
+
+/***************************************************
+                        MAIN
+***************************************************/
+
+/***************************************************
+                         BLOCK_1
+***************************************************/
+
+.block_1 {
+/*! background-color: red; */
+width: 301px;
+height: 688px;
+}
+
+main aside div.img {
+background-image: url('../img/contact_img.png');   
+width: 300px;
+height: 200px;
+}
+.block_1 aside div:nth-child(2) {
+/*! background-color: blue; */
+margin-top: 56px;
+} 
+
+.block_1 aside div:nth-child(3) {
+/*! background-color: blue; */
+margin-top: 40px;
+} 
+
+.block_1 aside div:nth-child(4) {
+/*! background-color: blue; */
+margin-top: 40px;
+} 
+
+li {
+display: block;
+margin-bottom: 16px; 
+}
+/***********   PHONE  *********/
+.block_1 aside span {
+margin-right: 19px;
+width: 19px;
+height: 19px;  
+}
+
+.block_1 aside span {
+vertical-align: middle;  /* Выравнивание по высоте */
+}
+span.img1 {
+display: -webkit-inline-box ;
+background-image: url('../img/phone.png'); 
+
+}
+/***********   ONLINE SERVICE   *********/
+span.img2 {
+display: -webkit-inline-box ;
+background-image: url('../img/www.png'); 
+
+}
+
+span.img3 {
+display: -webkit-inline-box ;
+background-image: url('../img/email.png');   
+}
+
+
+p {
+font-weight: 300;
+font-size: 16px;
+line-height: 26px;
+letter-spacing: 0.04em;
+color: #1F3F68;
+  
+}
+.block_1 p {
+margin-top: 24px; 
+opacity: 0.6;
+display: inline-block;  
+}
+
+h3 {
+
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+letter-spacing: 0.04em;
+color: #1F3F68;
+
+}
